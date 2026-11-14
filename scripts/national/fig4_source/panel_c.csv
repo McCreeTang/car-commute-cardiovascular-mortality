@@ -1,0 +1,11 @@
+model,weighting,pct,pct_lo,pct_hi,label,primary
+M0,pop_weighted,-28.85060317030885,-33.764578664495545,-23.572062090660676,No adjustment,False
+M0,unweighted,-10.474908128336391,-16.508729625676487,-4.00502904439427,No adjustment,False
+M1,pop_weighted,-27.47069833292332,-36.1631176420225,-17.59466618663238,+ age and sex,False
+M1,unweighted,-16.140793089255457,-23.589266334672267,-7.966247065494625,+ age and sex,False
+M2,pop_weighted,-3.5810497654623297,-11.03266705652648,4.494690992220352,"+ income, education, race and ethnicity",False
+M2,unweighted,-0.3868044085915123,-4.097788401984481,3.467777964544161,"+ income, education, race and ethnicity",False
+M3,pop_weighted,-4.59438365872098,-11.078107930426327,2.362100238911013,"+ rurality, density, state (primary)",True
+M3,unweighted,-6.872926928562062,-9.281013077131671,-4.40091944339438,"+ rurality, density, state (primary)",True
+M4,pop_weighted,-4.180764697190298,-10.66989764287758,2.779752980806593,"+ smoking, obesity, diabetes, inactivity",False
+M4,unweighted,-6.882686194169807,-9.265672098123137,-4.4371151369481225,"+ smoking, obesity, diabetes, inactivity",False

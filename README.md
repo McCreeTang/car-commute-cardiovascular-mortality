@@ -40,3 +40,7 @@ Code: MIT License. Derived data and reports: CC BY 4.0. Source data remain subje
 ## Citation
 
 Please cite the manuscript once published, and this repository (https://github.com/McCreeTang/car-commute-cardiovascular-mortality) by its Zenodo DOI (to be added at acceptance).
+
+### Figure 4
+
+Figure 4 is drawn in R (ggplot2 4.0, patchwork, ggtext) by `scripts/national/fig4_source/make_fig4.R` from the CSV files in the same folder, which are extracted from `results/national_plot_tables.parquet`, `results/national_cross_section_models.csv`, `results/national_change_models.csv`, `results/national_matched_contrast.csv` and `results/national_benchmarks.csv`. Run it from the repository root after copying the folder to `fig4_data/`.
