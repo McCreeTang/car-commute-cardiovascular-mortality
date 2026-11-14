@@ -1,0 +1,93 @@
+spec,spec_label,acs_vintage,exposure,estimator,n_models,n_sign_differs,n_significance_changes,n_sign_reversal_both_significant,n_nominal_sig,n_primary_nominal_sig,n_fdr_sig,n_outside_primary_ci,median_ratio_to_primary
+S1,nine core counties only,2019,share_commute_60plus,OLS (HC1),6,0,0,0,5,5,5,0.0,1.13515977688575
+S1,nine core counties only,2019,share_commute_60plus,Spatial error (ML),6,0,0,0,5,5,4,0.0,1.132437674959061
+S1,nine core counties only,2019,share_commute_60plus,"Spatial lag (ML), average total impact",6,1,0,0,5,5,5,0.0,1.1623718844155746
+S1,nine core counties only,2019,share_drive_alone,OLS (HC1),6,1,0,0,2,2,2,0.0,1.1463638615878164
+S1,nine core counties only,2019,share_drive_alone,Spatial error (ML),6,2,0,0,2,2,2,0.0,1.2443429448170835
+S1,nine core counties only,2019,share_drive_alone,"Spatial lag (ML), average total impact",6,2,0,0,2,2,2,0.0,0.6119373893237692
+S1,nine core counties only,2024,share_commute_60plus,OLS (HC1),6,1,1,0,1,0,0,0.0,2.2700461213920917
+S1,nine core counties only,2024,share_commute_60plus,Spatial error (ML),6,2,1,0,1,0,0,1.0,3.0055103365156537
+S1,nine core counties only,2024,share_commute_60plus,"Spatial lag (ML), average total impact",6,1,4,0,4,0,2,4.0,2.8579962623759982
+S1,nine core counties only,2024,share_drive_alone,OLS (HC1),6,0,0,0,1,1,1,0.0,0.9332988619455604
+S1,nine core counties only,2024,share_drive_alone,Spatial error (ML),6,1,1,0,1,2,0,0.0,0.6600888038044406
+S1,nine core counties only,2024,share_drive_alone,"Spatial lag (ML), average total impact",6,1,1,0,1,2,1,0.0,0.6806911086922505
+S2,excluding top decile of transit share (share_transit > 0.1399),2024,share_commute_60plus,OLS (HC1),6,1,0,0,0,0,0,0.0,1.5058659105757206
+S2,excluding top decile of transit share (share_transit > 0.1399),2024,share_commute_60plus,Spatial error (ML),6,1,0,0,0,0,0,0.0,1.5462439781572372
+S2,excluding top decile of transit share (share_transit > 0.1399),2024,share_commute_60plus,"Spatial lag (ML), average total impact",6,0,1,0,1,0,0,0.0,1.374547138418078
+S2,excluding top decile of transit share (share_transit > 0.1399),2024,share_drive_alone,OLS (HC1),6,0,1,0,2,1,1,0.0,0.6092736087337778
+S2,excluding top decile of transit share (share_transit > 0.1399),2024,share_drive_alone,Spatial error (ML),6,1,0,0,2,2,1,0.0,0.7052471469764852
+S2,excluding top decile of transit share (share_transit > 0.1399),2024,share_drive_alone,"Spatial lag (ML), average total impact",6,1,0,0,2,2,2,0.0,0.470881508385563
+S2,excluding top decile of transit share (share_transit > 0.2725),2019,share_commute_60plus,OLS (HC1),6,0,0,0,5,5,5,0.0,1.0188944835396403
+S2,excluding top decile of transit share (share_transit > 0.2725),2019,share_commute_60plus,Spatial error (ML),6,0,0,0,5,5,5,0.0,1.0374439871149566
+S2,excluding top decile of transit share (share_transit > 0.2725),2019,share_commute_60plus,"Spatial lag (ML), average total impact",6,0,0,0,5,5,5,0.0,1.0811173639455327
+S2,excluding top decile of transit share (share_transit > 0.2725),2019,share_drive_alone,OLS (HC1),6,2,0,0,2,2,2,0.0,0.6896644825193865
+S2,excluding top decile of transit share (share_transit > 0.2725),2019,share_drive_alone,Spatial error (ML),6,3,0,0,2,2,1,0.0,0.14462085635646849
+S2,excluding top decile of transit share (share_transit > 0.2725),2019,share_drive_alone,"Spatial lag (ML), average total impact",6,1,0,0,2,2,2,0.0,1.0488384154268255
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2019,mean_commute_min,OLS (HC1),6,0,0,0,5,5,5,0.0,
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2019,mean_commute_min,Spatial error (ML),6,0,2,0,5,5,4,0.0,
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2019,mean_commute_min,"Spatial lag (ML), average total impact",6,0,0,0,5,5,5,0.0,
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2019,share_drive_alone,OLS (HC1),6,0,0,0,2,2,2,0.0,1.012000170685661
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2019,share_drive_alone,Spatial error (ML),6,0,0,0,2,2,2,0.0,0.9426608854904835
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2019,share_drive_alone,"Spatial lag (ML), average total impact",6,0,0,0,2,2,2,0.0,0.8616973368408616
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2024,mean_commute_min,OLS (HC1),6,1,1,0,1,0,0,0.0,
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2024,mean_commute_min,Spatial error (ML),6,2,0,0,0,0,0,0.0,
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2024,mean_commute_min,"Spatial lag (ML), average total impact",6,1,0,0,0,0,0,0.0,
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2024,share_drive_alone,OLS (HC1),6,0,0,0,1,1,1,0.0,0.9643936303059235
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2024,share_drive_alone,Spatial error (ML),6,0,0,0,2,2,1,0.0,0.9437495737711774
+S3_mean_commute_min,alternative exposure: mean commute minutes replaces 60+ share,2024,share_drive_alone,"Spatial lag (ML), average total impact",6,1,0,0,2,2,1,0.0,0.9493498908743818
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2019,share_commute_45plus,OLS (HC1),6,0,0,0,5,5,5,0.0,
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2019,share_commute_45plus,Spatial error (ML),6,0,0,0,5,5,4,0.0,
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2019,share_commute_45plus,"Spatial lag (ML), average total impact",6,0,0,0,5,5,5,0.0,
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2019,share_drive_alone,OLS (HC1),6,0,0,0,2,2,2,0.0,1.0379703006138867
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2019,share_drive_alone,Spatial error (ML),6,0,0,0,2,2,2,0.0,1.020188546761526
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2019,share_drive_alone,"Spatial lag (ML), average total impact",6,1,0,0,2,2,2,0.0,0.8652438752204902
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2024,share_commute_45plus,OLS (HC1),6,1,0,0,0,0,0,0.0,
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2024,share_commute_45plus,Spatial error (ML),6,1,0,0,0,0,0,0.0,
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2024,share_commute_45plus,"Spatial lag (ML), average total impact",6,0,1,0,1,0,0,0.0,
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2024,share_drive_alone,OLS (HC1),6,0,0,0,1,1,1,0.0,1.0058415191482446
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2024,share_drive_alone,Spatial error (ML),6,0,0,0,2,2,1,0.0,0.9976053802757364
+S3_share_commute_45plus,alternative exposure: 45+ minute share replaces 60+ share,2024,share_drive_alone,"Spatial lag (ML), average total impact",6,0,0,0,2,2,1,0.0,1.0088690340052673
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2019,share_commute_90plus,OLS (HC1),6,0,0,0,5,5,5,0.0,
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2019,share_commute_90plus,Spatial error (ML),6,1,0,0,5,5,5,0.0,
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2019,share_commute_90plus,"Spatial lag (ML), average total impact",6,1,0,0,5,5,5,0.0,
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2019,share_drive_alone,OLS (HC1),6,0,0,0,2,2,2,0.0,0.9590178992735614
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2019,share_drive_alone,Spatial error (ML),6,1,0,0,2,2,2,0.0,0.9619019005670324
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2019,share_drive_alone,"Spatial lag (ML), average total impact",6,0,0,0,2,2,2,0.0,1.1259547543705188
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2024,share_commute_90plus,OLS (HC1),6,1,1,0,1,0,0,0.0,
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2024,share_commute_90plus,Spatial error (ML),6,2,0,0,0,0,0,0.0,
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2024,share_commute_90plus,"Spatial lag (ML), average total impact",6,1,0,0,0,0,0,0.0,
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2024,share_drive_alone,OLS (HC1),6,0,0,0,1,1,1,0.0,0.9862657092736893
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2024,share_drive_alone,Spatial error (ML),6,0,0,0,2,2,1,0.0,0.9748169512878568
+S3_share_commute_90plus,alternative exposure: 90+ minute share replaces 60+ share,2024,share_drive_alone,"Spatial lag (ML), average total impact",6,1,0,0,2,2,1,0.0,0.9709470891884564
+S4,adding PLACES current smoking prevalence as covariate,2019,share_commute_60plus,OLS (HC1),6,0,1,0,6,5,5,0.0,0.9784113633063374
+S4,adding PLACES current smoking prevalence as covariate,2019,share_commute_60plus,Spatial error (ML),6,0,0,0,5,5,5,0.0,1.004301061692697
+S4,adding PLACES current smoking prevalence as covariate,2019,share_commute_60plus,"Spatial lag (ML), average total impact",6,0,0,0,5,5,5,0.0,0.9723002090391792
+S4,adding PLACES current smoking prevalence as covariate,2019,share_drive_alone,OLS (HC1),6,2,0,0,2,2,2,0.0,0.5880960658209898
+S4,adding PLACES current smoking prevalence as covariate,2019,share_drive_alone,Spatial error (ML),6,3,1,0,1,2,1,1.0,-0.32320434545133686
+S4,adding PLACES current smoking prevalence as covariate,2019,share_drive_alone,"Spatial lag (ML), average total impact",6,1,1,0,3,2,3,2.0,1.0918994599338063
+S4,adding PLACES current smoking prevalence as covariate,2024,share_commute_60plus,OLS (HC1),6,0,1,0,1,0,1,0.0,0.5270049946386692
+S4,adding PLACES current smoking prevalence as covariate,2024,share_commute_60plus,Spatial error (ML),6,0,0,0,0,0,0,0.0,0.7056273180029061
+S4,adding PLACES current smoking prevalence as covariate,2024,share_commute_60plus,"Spatial lag (ML), average total impact",6,1,0,0,0,0,0,0.0,0.5609684897880902
+S4,adding PLACES current smoking prevalence as covariate,2024,share_drive_alone,OLS (HC1),6,4,1,0,2,1,1,2.0,-0.42274223795062216
+S4,adding PLACES current smoking prevalence as covariate,2024,share_drive_alone,Spatial error (ML),6,3,4,0,2,2,0,4.0,-0.1152124438388973
+S4,adding PLACES current smoking prevalence as covariate,2024,share_drive_alone,"Spatial lag (ML), average total impact",6,5,2,0,2,2,1,4.0,-0.33336546109488197
+S5,weighted by adult population (WLS) vs unweighted OLS,2019,share_commute_60plus,WLS adult-population weights (HC1),6,0,0,0,5,5,5,0.0,1.0625575637732556
+S5,weighted by adult population (WLS) vs unweighted OLS,2019,share_drive_alone,WLS adult-population weights (HC1),6,1,0,0,2,2,2,0.0,0.594622931496762
+S5,weighted by adult population (WLS) vs unweighted OLS,2024,share_commute_60plus,WLS adult-population weights (HC1),6,1,1,0,1,0,0,0.0,2.2465404546675534
+S5,weighted by adult population (WLS) vs unweighted OLS,2024,share_drive_alone,WLS adult-population weights (HC1),6,0,0,0,1,1,1,0.0,0.8965890947826946
+S6,first difference 2015-2019 -> 2020-2024 on boundary-stable tracts (PLACES method changed between releases),2024,share_commute_60plus,OLS (HC1),6,0,0,0,5,5,2,3.0,0.48910510772666405
+S6,first difference 2015-2019 -> 2020-2024 on boundary-stable tracts (PLACES method changed between releases),2024,share_commute_60plus,Spatial error (ML),6,1,5,0,0,5,0,3.0,0.37748463075258487
+S6,first difference 2015-2019 -> 2020-2024 on boundary-stable tracts (PLACES method changed between releases),2024,share_drive_alone,OLS (HC1),6,4,2,1,2,2,2,3.0,-0.46320606665643627
+S6,first difference 2015-2019 -> 2020-2024 on boundary-stable tracts (PLACES method changed between releases),2024,share_drive_alone,Spatial error (ML),6,5,2,1,2,2,1,3.0,-1.4498393379396723
+S8_share_commute_60plus,single exposure: share_commute_60plus without the other exposure,2019,share_commute_60plus,OLS (HC1),6,0,0,0,5,5,5,0.0,0.986983025085349
+S8_share_commute_60plus,single exposure: share_commute_60plus without the other exposure,2019,share_commute_60plus,Spatial error (ML),6,0,1,0,4,5,3,0.0,0.9951695509237897
+S8_share_commute_60plus,single exposure: share_commute_60plus without the other exposure,2019,share_commute_60plus,"Spatial lag (ML), average total impact",6,0,0,0,5,5,5,0.0,1.005780319712295
+S8_share_commute_60plus,single exposure: share_commute_60plus without the other exposure,2024,share_commute_60plus,OLS (HC1),6,0,0,0,0,0,0,0.0,0.9772007364878775
+S8_share_commute_60plus,single exposure: share_commute_60plus without the other exposure,2024,share_commute_60plus,Spatial error (ML),6,0,0,0,0,0,0,0.0,0.9691659048463863
+S8_share_commute_60plus,single exposure: share_commute_60plus without the other exposure,2024,share_commute_60plus,"Spatial lag (ML), average total impact",6,0,0,0,0,0,0,0.0,0.9014281533921591
+S8_share_drive_alone,single exposure: share_drive_alone without the other exposure,2019,share_drive_alone,OLS (HC1),6,1,0,0,2,2,2,0.0,0.9375490655585966
+S8_share_drive_alone,single exposure: share_drive_alone without the other exposure,2019,share_drive_alone,Spatial error (ML),6,2,0,0,2,2,1,0.0,0.9277619327727552
+S8_share_drive_alone,single exposure: share_drive_alone without the other exposure,2019,share_drive_alone,"Spatial lag (ML), average total impact",6,0,1,0,3,2,2,0.0,1.1603545268803797
+S8_share_drive_alone,single exposure: share_drive_alone without the other exposure,2024,share_drive_alone,OLS (HC1),6,0,0,0,1,1,1,0.0,0.9957679369839008
+S8_share_drive_alone,single exposure: share_drive_alone without the other exposure,2024,share_drive_alone,Spatial error (ML),6,0,0,0,2,2,1,0.0,1.0067200009334316
+S8_share_drive_alone,single exposure: share_drive_alone without the other exposure,2024,share_drive_alone,"Spatial lag (ML), average total impact",6,1,0,0,2,2,1,0.0,0.965116878083667

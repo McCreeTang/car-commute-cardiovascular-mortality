@@ -1,0 +1,34 @@
+check_id,description,value,tolerance,passed,detail
+V1_rr_equals_1,"All relative risks set to 1 (2,000 draws, sampling/assumption draws left random): max |PAF or attributable deaths| over all strata, scenarios, counterfactuals",0.0,1e-09,True,
+V2a_cap_not_binding,Cap counterfactual with a cap above every travel time (counterfactual = observed): max |PAF or deaths|,0.0,1e-09,True,
+V2b_baseline_equals_target,Baseline-year counterfactuals with baseline year = 2019 (counterfactual = observed): max |PAF or deaths|,7.28182475181596e-13,1e-09,True,
+V3a_monotone_exposure_A,"Attributable deaths (no-car counterfactual, all 14 counties, 35+, central) increase with travel time scaled by [0.5, 0.75, 1.0, 1.25, 1.5, 2.0]",7.659777490365677,0,True,15.28; 22.94; 30.62; 38.30; 45.99; 61.42
+V3a_monotone_exposure_B,"Attributable deaths (no-car counterfactual, all 14 counties, 35+, central) increase with travel time scaled by [0.5, 0.75, 1.0, 1.25, 1.5, 2.0]",3.841373182757339,0,True,7.67; 11.52; 15.36; 19.21; 23.06; 30.77
+V3a_monotone_exposure_C,"Attributable deaths (no-car counterfactual, all 14 counties, 35+, central) increase with travel time scaled by [0.5, 0.75, 1.0, 1.25, 1.5, 2.0]",15.229204418699496,0,True,30.32; 45.55; 60.82; 76.15; 91.52; 122.41
+V3a_monotone_exposure_D,"Attributable deaths (no-car counterfactual, all 14 counties, 35+, central) increase with travel time scaled by [0.5, 0.75, 1.0, 1.25, 1.5, 2.0]",18.98096454560526,0,True,37.74; 56.72; 75.78; 94.91; 114.11; 152.75
+V3a_monotone_exposure_E_both,"Attributable deaths (no-car counterfactual, all 14 counties, 35+, central) increase with travel time scaled by [0.5, 0.75, 1.0, 1.25, 1.5, 2.0]",112.5868115401008,0,True,101.56; 214.15; 360.02; 532.75; 706.62; 962.91
+V3b_monotone_f,"Scenario A deaths (no-car) increase with net-sitting fraction f = 0.25, 0.5, 0.75, 1.0",15.33155447141625,0,True,15.28; 30.62; 45.99; 61.42
+V3c_monotone_days,"Scenario A deaths (no-car) increase with commute days per week = 3, 4, 5",6.81520540144254,0,True,20.39; 27.20; 34.03
+V3d_monotone_cap,"Scenario A deaths under a travel-time cap decrease as the cap rises (15, 30, 45, 60, 90 min)",-1.742126514224188,0,True,16.96; 9.00; 5.08; 3.01; 1.27
+V3e_cap_below_nocar,"Cap-30 burden is smaller than the no-car burden (scenario A, central)",21.615685910944016,0,True,
+V4a_seed_median,"Seed 20261113 vs 777, 40,000 draws each: max relative difference in median attributable deaths (all 14 counties, 35+, every scenario x counterfactual x f setting; 88 rows)",0.0114344782710589,0.03,True,largest: E_men | cf3_no_car | f=not_applicable: 299.582 vs 303.008
+V4b_seed_bounds,"Seed 20261113 vs 777: max |difference in a 95% bound| / interval width, same rows",0.0123257344432507,0.03,True,
+V4c_mc_error,"Scenario A, 2010-distribution counterfactual: SD of the median across 20 batches of 2,000 draws / sqrt(20), relative to the median",0.0042354691134319,0.03,True,
+V5_series_vs_direct,"Power-series evaluation of the exposure-weighted excess risk vs direct exponentials, all cells x 81 weights, four slopes up to 0.2 per commuting-day hour: max abs difference / max value",3.4329630617165293e-15,1e-10,True,
+V6_independent_paf,"Scenario A central pooled PAF, 35-64, all 14 counties, 2010-distribution counterfactual: engine vs direct pandas computation (abs difference)",4.440892098500626e-16,1e-12,True,engine 0.00085177 direct 0.00085177
+V7_baseline_deaths,"Baseline CVD deaths 35+, 14 counties, 2019: engine vs rate x population from pums_county_year_age.parquet (abs difference)",3.637978807091713e-12,1e-06,True,engine 23509.287 independent 23509.287
+V11_independent_categorical_paf,"Scenario E central pooled PAFs (35-64 three counterfactuals; men 65+ 2010-distribution): engine vs direct pandas computation, max abs difference",4.510281037539698e-17,1e-12,True,0.017435/0.017435; 0.024807/0.024807; 0.048674/0.048674; 0.004952/0.004952
+V12_independent_county_deaths,"Scenario A central attributable deaths, 35-64, cap-30 counterfactual, summed over 14 county-specific PAFs: engine vs direct pandas computation (abs difference)",2.184918912462308e-13,1e-09,True,engine 4.582784 direct 4.582784
+V8_sampling_draws,"SD of the simulated 2019 population 35-64 (4,000 draws) / replicate-weight SE in pums_county_year_age.parquet",0.9708223899077836,0.95-1.05,True,sd 4719.9 se 4861.8
+V9_median_vs_central,"Scenario A, f fixed at 0.5: Monte Carlo median / deterministic central attributable deaths (informational)",0.994822482394307,0.9-1.1,True,
+V10_population_reconciliation,Max abs difference in weighted population (and its SE) vs pums_county_year_age.parquet over 306 county/region x year x age-band rows,0.0,1e-06,True,
+P1_post2020_counterfactual_equals_observed,"Post-2020 scenario with the 2024 distribution kept (counterfactual = observed), 2,000 draws, every scenario and stratum: max |fraction or deaths|",9.254383230633733e-13,1e-09,True,
+P2_sign_agrees_group_strata_A,"Scenario A, central: sign of the 2019-kept deaths / pooled fraction equals the sign of the 2019-to-2024 change in mean car-commute hours per resident, county group x age band strata (share agreeing)",1.0,1.0,True,24 of 24 agree
+P2_sign_agrees_group_strata_E_both,"Scenario E_both, central: sign of the 2019-kept deaths / pooled fraction equals the sign of the 2019-to-2024 change in mean car-commute hours per resident, county group x age band strata (share agreeing)",1.0,1.0,True,24 of 24 agree
+P2_sign_agrees_group_strata_E_men,"Scenario E_men, central: sign of the 2019-kept deaths / pooled fraction equals the sign of the 2019-to-2024 change in mean car-commute hours per resident, county group x age band strata (share agreeing)",1.0,1.0,True,24 of 24 agree
+P2_sign_agrees_county_strata_A,"Scenario A, central: sign of the county-specific 2019-kept fraction equals the sign of the change in mean car-commute hours per resident, 14 counties x 2 mortality age bands (share agreeing)",1.0,1.0,True,28 of 28 agree
+P3a_post2020_seed_median,"Post-2020 scenario, seed 20261113 vs 777, 40000 draws each: max relative difference in median deaths (all 14 counties; 35-64, 65+, 35+; A, E both sexes, E men; both counterfactuals)",0.015458936028432152,0.03,True,largest: E_men | 65plus | ad_2010_kept: 46.387 vs 47.104
+P3b_post2020_seed_bounds,Same rows: max |difference in a 95% bound| / interval width,0.020419743373473968,0.03,True,
+P3c_post2020_seed_reversal,Same strata: max absolute difference in the median reversal fraction,0.001783596650514585,0.01,True,
+P4_reproduces_main_2019_results,"Median and 95% bounds of 2019 attributable deaths (2010 kept) recomputed in the post-2020 run vs burden_results.csv, 27 rows: max abs difference",2.842170943040401e-14,1e-08,True,
+P5_independent_reversal_fraction,"Scenario A central pooled reversal fraction, 35-64, all 14 counties: engine vs direct pandas computation (abs difference)",6.661338147750939e-15,1e-09,True,engine 0.508827 direct 0.508827

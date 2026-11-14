@@ -1,0 +1,29 @@
+parameter,value,range_or_ci,distribution_in_monte_carlo,source_row_id,abstract_only,note
+"RR of CVD mortality per additional h/day sitting, scenario A (central)",1.02,1.01-1.03 (95% CI),"log-normal, SE(log)=0.00500 from the published CI",DR027,False,Patterson 2018; read from estimate/ci columns
+"RR per h/day, scenario B (below 6 h/day total sitting)",1.01,0.99-1.02 (95% CI),"log-normal, SE(log)=0.00762 from the published CI",DR028,False,"Patterson 2018; read from notes field: ""Below 6 h/day: 1.01 (0.99-1.02)"""
+"RR per h/day, scenario C (above 6 h/day total sitting)",1.04,1.03-1.04 (95% CI),"log-normal, SE(log)=0.00246 from the published CI",DR028,False,Patterson 2018; read from estimate/ci columns
+"RR of fatal+non-fatal CVD per h/day sedentary, scenario D",1.05,1.02-1.07 (95% CI),"log-normal, SE(log)=0.01221 from the published CI",DR033,False,"Onagbiye 2024; read from notes field: ""Per hour sedentary RR 1.05 (1.02-1.07)"""
+"HR CVD mortality, 4-7 vs <4 h/week in a car, scenario E",1.09,0.78-1.52 (95% CI),"log-normal, SE(log)=0.17020 from the published CI",DR001,False,Warren 2010; read from estimate/ci columns
+"HR CVD mortality, 7-10 vs <4 h/week in a car, scenario E",1.23,0.89-1.7 (95% CI),"log-normal, SE(log)=0.16510 from the published CI",DR002,False,Warren 2010; read from estimate/ci columns
+"HR CVD mortality, >10 vs <4 h/week in a car, scenario E",1.5,1.08-2.09 (95% CI),"log-normal, SE(log)=0.16842 from the published CI",DR003,False,Warren 2010; read from estimate/ci columns
+ILLUSTRATIVE: IRR of MI onset within 2 h of an anger outburst,2.43,2.01-2.9 (95% CI),"log-normal, SE(log)=0.09352 from the published CI",DR047,False,Mostofsky 2013; read from estimate/ci columns
+ILLUSTRATIVE: OR of acute stroke within 1 h of anger or emotional upset,1.37,1.15-1.64 (99% CI),"log-normal, SE(log)=0.06890 from the published CI",DR050,False,Smyth 2022; read from estimate/ci columns
+Commute days per week (d),4.5,4-5,uniform,assumed,not_applicable,ACS does not record commute days; 5 days x mean weeks worked/52 among 2019 car commuters gives the value in burden/exposure_meta.json; 3 and 5 days shown as sensitivities
+"Fraction of car commute time that is net additional sitting (f), scenarios A-D",0.5,0-1,"uniform; fixed values 0.25, 0.5, 0.75, 1.0 also reported",assumed,not_applicable,no direct estimate exists; DR005-DR008 source (Ding 2014) suggests displacement of other sitting
+Fraction f for scenario E,1.0,fixed,not varied,assumed,not_applicable,"Warren 2010 exposure is car time itself, so no displacement factor is applied"
+Daily averaging of weekly commute hours,7.0,fixed,not varied,assumed,not_applicable,h/day = weekly hours / 7; workday-only averaging shown as a sensitivity
+Car modes (primary),car_alone + carpool,"sensitivity: + taxi, motorcycle, bus, rail, ferry",not varied,assumed,not_applicable,ACS travel time is door-to-door and is treated as in-vehicle time
+Travel-time top-code,published replacement value (141/142/141 min in 2010/2019/2024),sensitivity: largest uncensored value (100/115/115 min) and 180 min,not varied,data dictionary,not_applicable,Census replaces all values above a threshold by one value; the threshold differs between 2010 and 2019
+Counterfactual 2 cap on one-way car commute,30.0,fixed,not varied,assumed,not_applicable,minutes
+Counterfactual 1 baseline year,2010,fixed,sampling error of the 2010 sample propagated,assumed,not_applicable,2010 followed a recession; cf1b holds the 2019 car-commuter share fixed and changes only durations
+Warren categories applied to commute car hours only (non-commute car time),0.0,sensitivity: 2 and 3.9 h/week,not varied,assumed,not_applicable,Warren 2010 measured all car time
+Warren category boundaries,<4; 4 to <7; 7 to 10; >10 h/week,sensitivity: >=10,not varied,assumed,not_applicable,published labels do not state boundary inclusion
+Correlation between the three Warren log-HRs,0.5,sensitivity: 0 and 1,multivariate normal,assumed,not_applicable,the three HRs share a reference group; covariance not published
+Warren men-only HRs applied to women,yes in E_both; no in E_men,,,assumed,not_applicable,no driving-specific estimate exists for women
+Relative risks constant across age bands,yes,,,assumed,not_applicable,no usable age-stratified estimates in the parameter table
+Sampling error,80 ACS replicate weights,,normal random combination of replicate deviations (variance = 4/80 x sum of squared deviations); independent between survey years,PUMS,not_applicable,
+Baseline mortality rate uncertainty,"county x age band smoothed rate, 2019","published interval, treated as 95%","log-normal, independent across counties and bands",mortality_long.parquet (topic cvd),not_applicable,rates are age-standardised within band and model-smoothed; deaths = rate x PUMS population
+ILLUSTRATIVE: driving-anger outbursts per hour of car commuting,0.01414213562373095,0.002-0.1,log-uniform,assumed,not_applicable,NO DATASET SUPPLIES THIS; range spans one episode per 500 to one per 10 hours of driving
+ILLUSTRATIVE: hazard window after an episode,"2 h (MI), 1 h (stroke)",fixed,not varied,DR047; DR050,False,as defined in the source studies
+ILLUSTRATIVE: trigger RR for event onset applies equally to CHD / stroke deaths,yes,,,assumed,not_applicable,source studies measured onset of mostly non-fatal events
+Monte Carlo,"40000 draws, seed 20261113",,,not_applicable,not_applicable,numpy default_rng (PCG64)
