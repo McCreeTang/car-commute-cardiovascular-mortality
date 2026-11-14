@@ -39,4 +39,4 @@ Code: MIT License. Derived data and reports: CC BY 4.0. Source data remain subje
 
 ## Citation
 
-Please cite the manuscript once published, and this repository by its Zenodo DOI (to be added at acceptance).
+Please cite the manuscript once published, and this repository (https://github.com/McCreeTang/car-commute-cardiovascular-mortality) by its Zenodo DOI (to be added at acceptance).
